@@ -1,0 +1,23 @@
+// Layout
+$page-width: 1440px;
+$mobile: 375px;
+
+// Colors
+// 1. Primary
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+// 2. Neutral
+$grayish-blue: hsl(233, 8%, 62%);
+$ligt-grayish-blue: hsl(220, 16%, 96%);
+$light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+// Buttons
+$primary-btn: linear-gradient($dark-blue, $lime-green, $bright-cyan);
+
+// Typography
+// $font-stack: "Public Sans";
+$font-stack: system-ui;
+$font-weight-light: 300;
+$font-weight-normal: 400;
