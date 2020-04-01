@@ -5,7 +5,6 @@
 .btn-primary {
   background: $primary-btn;
   padding: 10px;
-  text-decoration: none;
   font-weight: $font-weight-normal;
   color: #fff;
   padding: 0.8rem 1.5rem;
@@ -46,9 +45,7 @@ body {
 .header {
   padding: 2rem 0;
   background: $white;
-  a {
-    text-decoration: none;
-  }
+
   .row {
     display: flex;
     align-items: center;
@@ -163,22 +160,79 @@ body {
     font-size: 90%;
     margin-bottom: 1rem;
     a {
-      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
   &__title {
     margin-bottom: 1rem;
     font-size: 110%;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__header {
     background: #999;
     background-size: cover;
-    height: 230px;
+    position: relative;
+    height: 210px;
+    max-width: 500px;
+    &--img {
+      position: absolute;
+      height: 100%;
+      object-fit: fill;
+    }
   }
 
   &__body {
     font-size: 90%;
   }
 }
+
+/* Articles end */
+
+/* Main Footer start */
+
+.main-footer {
+  background: $dark-blue;
+  padding: 3rem 0;
+
+  .row {
+    display: flex;
+  }
+  &__box {
+    flex: 1;
+  }
+
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  &__logo--icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social-icons {
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+  &__links {
+    color: #fff;
+    li {
+      margin-bottom: 1rem;
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+/* Main Footer end */

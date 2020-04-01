@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EasyBank</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -142,15 +141,18 @@
 
       <div class="posts__grid">
         <div class="post">
-          <div
-            class="post__header"
-            data-image="images/image-currency.jpg"
-          ></div>
+          <div class="post__header">
+            <img
+              class="post__header--img"
+              src="images/image-currency.jpg"
+              alt="Recieve money in any currency with no fees"
+            />
+          </div>
 
           <div class="post__content">
             <p class="post__author">By <a href="#">Claire Robinson</a></p>
             <h3 class="post__title">
-              Recieve money in any currency with no fees
+              <a href="#">Recieve money in any currency with no fees</a>
             </h3>
 
             <p class="post__body">
@@ -162,14 +164,17 @@
 
         <!-- Post 2 -->
         <div class="post">
-          <div
-            class="post__header"
-            data-image="images/image-restaurant.jpg"
-          ></div>
+          <div class="post__header">
+            <img
+              class="post__header--img"
+              src="images/image-restaurant.jpg"
+              alt="Treat yourself without worrying about money"
+            />
+          </div>
           <div class="post__content">
             <p class="post__author">By <a href="#">Wilson Hutton</a></p>
             <h3 class="post__title">
-              Treat yourself without worrying about money
+              <a href="#">Treat yourself without worrying about money</a>
             </h3>
 
             <p class="post__body">
@@ -181,11 +186,19 @@
 
         <!-- Post 3 -->
         <div class="post">
-          <div class="post__header" data-image="images/image-plane.jpg"></div>
+          <div class="post__header">
+            <img
+              class="post__header--img"
+              src="images/image-plane.jpg"
+              alt="Take your EasyBank card wherever you go"
+            />
+          </div>
 
           <div class="post__content">
             <p class="post__author">By <a href="#">Wilson Hutton</a></p>
-            <h3 class="post__title">Take your EasyBank card wherever you go</h3>
+            <h3 class="post__title">
+              <a href="#">Take your EasyBank card wherever you go</a>
+            </h3>
 
             <p class="post__body">
               We want you to enjoy your travels. This is why we don't carge any
@@ -196,15 +209,18 @@
 
         <!-- Post 4 -->
         <div class="post">
-          <div
-            class="post__header"
-            data-image="images/image-confetti.jpg"
-          ></div>
+          <div class="post__header">
+            <img
+              class="post__header--img"
+              src="images/image-confetti.jpg"
+              alt="Our invite-only Beta accounts are now live!"
+            />
+          </div>
 
           <div class="post__content">
             <p class="post__author">By <a href="#">Claire Robinson</a></p>
             <h3 class="post__title">
-              Our invite-only Beta accounts are now live!
+              <a href="#"> Our invite-only Beta accounts are now live!</a>
             </h3>
 
             <p class="post__body">
@@ -221,7 +237,7 @@
     <!-- Footer start -->
     <footer class="main-footer">
       <div class="row">
-        <div class="main-footer__box row">
+        <div class="main-footer__box main-footer__logo--icons row">
           <img
             src="/images/logo.svg"
             alt="EasyBank"
@@ -229,19 +245,29 @@
           />
 
           <div class="main-footer__social-icons">
-            <img src="/images/icons/icon-facebook.svg" alt="Facebook" />
+            <a href="#">
+              <img src="/images/icons/icon-facebook.svg" alt="Facebook" />
+            </a>
 
-            <img src="/images/icons/icon-youtube.svg" alt="Youtube" />
+            <a href="#">
+              <img src="/images/icons/icon-youtube.svg" alt="Youtube" />
+            </a>
 
-            <img src="/images/icons/icon-twitter.svg" alt="Twitter" />
+            <a href="#">
+              <img src="/images/icons/icon-twitter.svg" alt="Twitter" />
+            </a>
 
-            <img src="/images/icons/icon-pinterest.svg" alt="Pinterest" />
+            <a href="#">
+              <img src="/images/icons/icon-pinterest.svg" alt="Pinterest" />
+            </a>
 
-            <img src="/images/icons/icon-instagram.svg" alt="Instagram" />
+            <a href="#">
+              <img src="/images/icons/icon-instagram.svg" alt="Instagram" />
+            </a>
           </div>
         </div>
 
-        <nav class="footer__box footer__links">
+        <nav class="main-footer__box main-footer__links">
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact</a></li>
@@ -249,7 +275,7 @@
           </ul>
         </nav>
 
-        <nav class="footer__box footer__links">
+        <nav class="main-footer__box main-footer__links">
           <ul>
             <li><a href="#">Careers</a></li>
             <li><a href="#">Support</a></li>
@@ -257,11 +283,12 @@
           </ul>
         </nav>
 
-        <div class="footer__box">
-          <a href="#">
-            Request Invite
-          </a>
-
+        <div class="main-footer__box">
+          <p>
+            <a href="#" class="btn-primary">
+              Request Invite
+            </a>
+          </p>
           <p>&copy; Easybank. All Rights Reserved</p>
         </div>
       </div>
