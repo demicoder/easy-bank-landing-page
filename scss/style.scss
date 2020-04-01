@@ -1,7 +1,7 @@
 @import "variables";
 @import "_reset";
 
-// Utilitites start
+/* Utilities start */
 .btn-primary {
   background: $primary-btn;
   padding: 10px;
@@ -18,14 +18,31 @@
   margin: auto;
 }
 
-// Utitlities end
+.section {
+  margin-bottom: 5rem;
+
+  &__title {
+    line-height: 2;
+    margin-bottom: 1rem;
+    font: {
+      size: 250%;
+      weight: $font-weight-normal;
+    }
+  }
+
+  &__description {
+    line-height: 2;
+  }
+}
+/* Utilities end */
 
 body {
   font-family: $font-stack;
   background: $light-gray;
 }
 
-// Main header
+/* Main header start */
+
 .header {
   padding: 2rem 0;
   background: $white;
@@ -47,11 +64,12 @@ body {
     color: $grayish-blue;
   }
 }
+/* Header end */
 
-// Hero
+/* Hero start */
+
 .hero {
   position: relative;
-  // height: $desktop-hero-height;
 
   background: {
     image: url("../images/bg-intro-desktop.svg");
@@ -97,5 +115,40 @@ body {
     p {
       margin: 2rem 0 3rem 0;
     }
+  }
+}
+/* Hero end */
+
+/* Services start */
+.services {
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h3 {
+    font-size: 150%;
+    font-weight: $font-weight-normal;
+    line-height: 3;
+  }
+
+  .service {
+    margin: 3rem 0;
+    flex-wrap: wrap;
+    width: 23%;
+  }
+}
+
+/* Articles start */
+.posts {
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post {
+    margin: 3rem 0;
+    flex-wrap: wrap;
+    width: 23%;
   }
 }
