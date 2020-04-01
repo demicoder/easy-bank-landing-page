@@ -91,7 +91,7 @@ body {
 }
 
 .hero::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -154,7 +154,7 @@ body {
   margin: 3rem 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 23%;
+  width: 23.5%;
 }
 
 /* Articles start */
@@ -167,10 +167,41 @@ body {
           justify-content: space-between;
 }
 
-.posts .post {
+.post {
   margin: 3rem 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 23%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.post__content {
+  background: white;
+  padding: 1.5rem;
+}
+
+.post__author {
+  font-size: 90%;
+  margin-bottom: 1rem;
+}
+
+.post__author a {
+  color: inherit;
+}
+
+.post__title {
+  margin-bottom: 1rem;
+  font-size: 110%;
+}
+
+.post__header {
+  background: #999;
+  background-size: cover;
+  height: 230px;
+}
+
+.post__body {
+  font-size: 90%;
 }
 /*# sourceMappingURL=style.css.map */
