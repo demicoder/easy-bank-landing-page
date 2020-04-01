@@ -1,2 +1,101 @@
 @import "variables";
 @import "_reset";
+
+// Utilitites start
+.btn-primary {
+  background: $primary-btn;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: $font-weight-normal;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: $font-weight-normal;
+}
+
+.row {
+  max-width: $page-width;
+  margin: auto;
+}
+
+// Utitlities end
+
+body {
+  font-family: $font-stack;
+  background: $light-gray;
+}
+
+// Main header
+.header {
+  padding: 2rem 0;
+  background: $white;
+  a {
+    text-decoration: none;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  &__nav li a {
+    color: $grayish-blue;
+  }
+}
+
+// Hero
+.hero {
+  position: relative;
+  // height: $desktop-hero-height;
+
+  background: {
+    image: url("../images/bg-intro-desktop.svg");
+    size: 100%;
+    repeat: no-repeat;
+    position: 35rem -17rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    background: {
+      image: url("../images/image-mockups.png");
+      size: 50%;
+      repeat: no-repeat;
+      position: 50rem -5rem;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    height: $desktop-hero-height;
+    flex-direction: column;
+    flex-flow: column;
+
+    &--inner {
+      position: absolute;
+      top: 50%;
+      width: 30%;
+      transform: translate(0%, -50%);
+    }
+
+    h1 {
+      font-size: 250%;
+      font-weight: $font-weight-normal;
+    }
+
+    p {
+      margin: 2rem 0 3rem 0;
+    }
+  }
+}

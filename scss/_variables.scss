@@ -1,6 +1,7 @@
 // Layout
-$page-width: 1440px;
+$page-width: 1200px;
 $mobile: 375px;
+$desktop-hero-height: 600px;
 
 // Colors
 // 1. Primary
@@ -14,7 +15,7 @@ $light-gray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 
 // Buttons
-$primary-btn: linear-gradient($dark-blue, $lime-green, $bright-cyan);
+$primary-btn: linear-gradient(to right, $lime-green, $bright-cyan);
 
 // Typography
 // $font-stack: "Public Sans";

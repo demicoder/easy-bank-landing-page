@@ -4,42 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EasyBank</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header row">
-      <div class="header__logo">
-        <img
-          src="./images/logo.svg"
-          alt="EasyBank"
-          class="main-header__logo--img"
-        />
-      </div>
+    <header class="header">
+      <div class="row">
+        <div class="header__logo">
+          <img
+            src="./images/logo.svg"
+            alt="EasyBank"
+            class="main-header__logo--img"
+          />
+        </div>
 
-      <nav class="header__nav">
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </nav>
+
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a href="#" class="btn-primary">Request Invite</a></li>
         </ul>
-      </nav>
-
-      <ul>
-        <li><a href="#">Request Invite</a></li>
-      </ul>
+      </div>
     </header>
 
     <!-- Hero Start -->
     <div class="hero">
-      <h1>Next generation digital Banking</h1>
+      <div class="row">
+        <div class="hero__content">
+          <div class="hero__content--inner">
+            <h1>Next generation digital Banking</h1>
 
-      <p>
-        Take your financial life online. Your Easybank account will be a
-        one-stop-shop for spending, saving, budgeting, investing, and muc more.
-      </p>
+            <p>
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and muc
+              more.
+            </p>
 
-      <a href="#">Request Invite</a>
+            <a href="#" class="btn-primary">Request Invite</a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Hero end -->
 
@@ -125,7 +134,7 @@
     <!-- Services end -->
 
     <!-- Articles Start -->
-    <div class="section posts">
+    <div class="section posts row">
       <h2 class="section__title">Latest Articles</h2>
 
       <!-- Post 1 -->
@@ -184,44 +193,50 @@
 
     <!-- Footer start -->
     <footer class="main-footer">
-      <div class="main-footer__box row">
-        <img src="/images/logo.svg" alt="EasyBank" class="main-footer__logo" />
+      <div class="row">
+        <div class="main-footer__box row">
+          <img
+            src="/images/logo.svg"
+            alt="EasyBank"
+            class="main-footer__logo"
+          />
 
-        <div class="main-footer__social-icons">
-          <img src="/images/icons/icon-facebook.svg" alt="Facebook" />
+          <div class="main-footer__social-icons">
+            <img src="/images/icons/icon-facebook.svg" alt="Facebook" />
 
-          <img src="/images/icons/icon-youtube.svg" alt="Youtube" />
+            <img src="/images/icons/icon-youtube.svg" alt="Youtube" />
 
-          <img src="/images/icons/icon-twitter.svg" alt="Twitter" />
+            <img src="/images/icons/icon-twitter.svg" alt="Twitter" />
 
-          <img src="/images/icons/icon-pinterest.svg" alt="Pinterest" />
+            <img src="/images/icons/icon-pinterest.svg" alt="Pinterest" />
 
-          <img src="/images/icons/icon-instagram.svg" alt="Instagram" />
+            <img src="/images/icons/icon-instagram.svg" alt="Instagram" />
+          </div>
         </div>
-      </div>
 
-      <nav class="footer__box footer__links">
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
+        <nav class="footer__box footer__links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
 
-      <nav class="footer__box footer__links">
-        <ul>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </nav>
+        <nav class="footer__box footer__links">
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
 
-      <div class="footer__box">
-        <a href="#">
-          Request Invite
-        </a>
+        <div class="footer__box">
+          <a href="#">
+            Request Invite
+          </a>
 
-        <p>&copy; Easybank. All Rights Reserved</p>
+          <p>&copy; Easybank. All Rights Reserved</p>
+        </div>
       </div>
     </footer>
   </body>
