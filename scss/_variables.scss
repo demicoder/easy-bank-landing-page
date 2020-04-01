@@ -18,7 +18,16 @@ $white: hsl(0, 0%, 100%);
 $primary-btn: linear-gradient(to right, $lime-green, $bright-cyan);
 
 // Typography
-// $font-stack: "Public Sans";
-$font-stack: system-ui;
+$font-stack: 'Public Sans', sans-serif;
 $font-weight-light: 300;
 $font-weight-normal: 400;
+
+// Animations
+@keyframes fillUp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

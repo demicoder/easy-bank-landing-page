@@ -1,3 +1,21 @@
+@-webkit-keyframes fillUp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fillUp {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -33,8 +51,8 @@ a {
 }
 
 .btn-primary:hover {
-  -webkit-box-shadow: 3px 3px #2d314d;
-          box-shadow: 3px 3px #2d314d;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49, 211, 92, 0.7)), to(rgba(43, 183, 218, 0.7)));
+  background: linear-gradient(to right, rgba(49, 211, 92, 0.7), rgba(43, 183, 218, 0.7));
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
@@ -61,7 +79,7 @@ a {
 
 /* Utilities end */
 body {
-  font-family: system-ui;
+  font-family: "Public Sans", sans-serif;
   background: #fafafa;
 }
 
@@ -69,7 +87,6 @@ body {
 .header {
   position: relative;
   z-index: 10;
-  padding: 2rem 0;
   background: white;
 }
 
@@ -91,11 +108,28 @@ body {
 }
 
 .header__nav li a {
+  display: inline-block;
   color: #9698a6;
+  padding-top: 2rem;
+}
+
+.header__nav li a:after {
+  content: '';
+  display: block;
+  height: 3px;
+  margin-top: 2rem;
+  background: transparent;
 }
 
 .header__nav li a:hover {
-  text-decoration: underline;
+  color: #2d314d;
+}
+
+.header__nav li a:hover:after {
+  -webkit-animation: fillUp 0.4s;
+          animation: fillUp 0.4s;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
 }
 
 /* Header end */
@@ -221,8 +255,13 @@ body {
   font-size: 110%;
 }
 
+.post__title a {
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+}
+
 .post__title a:hover {
-  text-decoration: underline;
+  color: #31d35c;
 }
 
 .post__header {
@@ -295,8 +334,7 @@ body {
 }
 
 .main-footer__links li a:hover {
-  text-decoration: underline;
-  color: #9698a6;
+  color: #31d35c;
 }
 
 .main-footer__signup {
@@ -313,7 +351,7 @@ body {
   color: #9698a6;
 }
 
-.main-footer__signup p {
+.main-footer__signup p:not(:last-child) {
   color: white;
   margin-bottom: 3rem;
 }

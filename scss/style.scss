@@ -13,8 +13,11 @@
   transition: 0.4s ease-out;
   display: inline-block;
   &:hover {
-    box-shadow: 3px 3px $dark-blue;
-    // background: linear-gradient($lime-green);
+    background: linear-gradient(
+      to right,
+      rgba($lime-green, 0.7),
+      rgba($bright-cyan, 0.7)
+    );
     transform: translateY(-2px);
   }
 }
@@ -52,7 +55,6 @@ body {
 .header {
   position: relative;
   z-index: 10;
-  padding: 2rem 0;
   background: $white;
 
   .row {
@@ -67,9 +69,24 @@ body {
   }
 
   &__nav li a {
+    display: inline-block;
     color: $grayish-blue;
+    padding-top: 2rem;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 3px;
+      margin-top: 2rem;
+      background: transparent;
+    }
+
     &:hover {
-      text-decoration: underline;
+      color: $dark-blue;
+      &:after {
+        animation: fillUp 0.4s;
+        background: $primary-btn;
+      }
     }
   }
 }
@@ -184,8 +201,9 @@ body {
     margin-bottom: 1rem;
     font-size: 110%;
     a {
+      transition: 0.4s ease-out;
       &:hover {
-        text-decoration: underline;
+        color: $lime-green;
       }
     }
   }
@@ -244,8 +262,7 @@ body {
       a {
         transition: 0.4s ease-out;
         &:hover {
-          text-decoration: underline;
-          color: $grayish-blue;
+          color: $lime-green;
         }
       }
     }
@@ -256,7 +273,7 @@ body {
       color: $grayish-blue;
     }
 
-    p {
+    p:not(:last-child) {
       color: $white;
       margin-bottom: 3rem;
     }
