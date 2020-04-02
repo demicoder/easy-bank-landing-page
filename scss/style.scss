@@ -407,4 +407,19 @@ body {
     }
   }
   /* Mobile Hero end */
+
+  .services .services__grid,
+  .posts .posts__grid {
+    flex-direction: column;
+    margin: 1.5% 0;
+  }
+
+  .services .service,
+  .posts .post {
+    width: 100%;
+  }
+
+  .posts {
+    text-align: left;
+  }
 }

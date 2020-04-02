@@ -483,5 +483,20 @@ body {
             transform: translate(0);
   }
   /* Mobile Hero end */
+  .services .services__grid,
+  .posts .posts__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1.5% 0;
+  }
+  .services .service,
+  .posts .post {
+    width: 100%;
+  }
+  .posts {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
