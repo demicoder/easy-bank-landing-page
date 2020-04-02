@@ -1,26 +1,10 @@
 // DOM elements
 const elements = {
-  openMenu: document.querySelector('.open-menu'),
-  closeMenu: document.querySelector('.close-menu')
+  hamburgerMenu: document.querySelector('.header__mobile-menu'),
+  nav: document.querySelector('.header__nav')
 };
 
-// Functions
-const showMenu = () => {
-  openMenu.classList.add('hide');
-  openMenu.classList.remove('show');
-
-  closeMenu.classList.add('show');
-  closeMenu.classList.remove('hide');
-};
-
-const hideMenu = () => {
-  closeMenu.classList.remove('show');
-  closeMenu.classList.add('hide');
-
-  openMenu.classList.add('show');
-  openMenu.classList.remove('hide');
-};
-
-// Delegation
-elements.openMenu.addEventListener('click', showMenu);
-elements.closeMenu.addEventListener('click', hideMenu);
+elements.hamburgerMenu.addEventListener('click', () => {
+  elements.hamburgerMenu.classList.toggle('header__mobile-menu--active');
+  elements.nav.classList.toggle('header__nav--active');
+});

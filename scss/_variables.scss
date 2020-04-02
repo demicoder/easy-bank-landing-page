@@ -43,3 +43,21 @@ $font-weight-normal: 400;
     transform: translateY(-5px);
   }
 }
+
+@keyframes slideUp {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}

@@ -345,12 +345,16 @@ body {
         display: block;
       }
 
-      .hide {
+      .close-menu {
         display: none;
       }
-
-      .show {
-        display: block;
+      &--active {
+        .open-menu {
+          display: none;
+        }
+        .close-menu {
+          display: block;
+        }
       }
     }
 
@@ -366,6 +370,14 @@ body {
       width: 85%;
       top: 4rem;
       border-radius: 5px;
+      &--active {
+        display: block;
+        transition: 0.4s ease-in;
+        animation: slideUp 0.5s;
+        li a {
+          animation: slideUp 1s;
+        }
+      }
       li {
         display: block;
         margin: 0;
