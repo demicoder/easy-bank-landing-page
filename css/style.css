@@ -53,8 +53,8 @@ a {
 .btn-primary:hover {
   background: -webkit-gradient(linear, left top, right top, from(rgba(49, 211, 92, 0.7)), to(rgba(43, 183, 218, 0.7)));
   background: linear-gradient(to right, rgba(49, 211, 92, 0.7), rgba(43, 183, 218, 0.7));
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .row {
@@ -195,12 +195,12 @@ body {
 }
 
 .hero__content h1 {
-  font-size: 250%;
+  font-size: 230%;
   font-weight: 400;
 }
 
 .hero__content p {
-  margin: 2rem 0 3rem 0;
+  margin: 1rem 0;
 }
 
 /* Hero end */
@@ -420,5 +420,54 @@ body {
   .header__signup {
     display: none;
   }
+  /* Mobile Hero starts */
+  .hero {
+    position: relative;
+  }
+  .hero__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero .btn-primary {
+    width: auto !important;
+  }
+  .hero__image {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-repeat: no-repeat;
+    background-image: url("../images/bg-intro-mobile.svg");
+    background-size: cover;
+  }
+  .hero__image img {
+    width: 90%;
+    display: block;
+    margin: -32% auto 0 auto;
+  }
+  .hero__content {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .hero__content--vertical-center {
+    position: relative;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  /* Mobile Hero end */
 }
 /*# sourceMappingURL=style.css.map */
