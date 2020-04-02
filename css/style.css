@@ -326,7 +326,7 @@ body {
           flex-direction: column;
 }
 
-.main-footer__social-icons img {
+.main-footer__social-icons svg {
   margin-right: 0.5rem;
 }
 
@@ -497,6 +497,32 @@ body {
   }
   .posts {
     text-align: left;
+  }
+  .main-footer .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-footer__box {
+    margin-bottom: 1.5rem;
+  }
+  .main-footer__links {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .main-footer__signup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .main-footer__signup p:not(:last-child) {
+    margin-bottom: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
