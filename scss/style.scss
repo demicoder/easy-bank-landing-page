@@ -50,12 +50,19 @@ body {
   background: $light-gray;
 }
 
-/* Main header start */
+/*
 
+
+
+/* Responsive layout */
 .header {
   position: relative;
   z-index: 10;
   background: $white;
+
+  &__hamburger {
+    display: none;
+  }
 
   .row {
     display: flex;
@@ -72,11 +79,12 @@ body {
     display: inline-block;
     color: $grayish-blue;
     padding-top: 2rem;
+    transition: 0.4s ease-out;
 
     &:after {
       content: '';
       display: block;
-      height: 3px;
+      height: 4px;
       margin-top: 2rem;
       background: transparent;
     }
@@ -282,3 +290,58 @@ body {
   }
 }
 /* Main Footer end */
+
+/* Responsive layout */
+@media (max-width: 375px) {
+  .header {
+    position: relative;
+    background: transparent;
+    &__logo {
+      padding: 1.5rem 2rem;
+      width: 100%;
+      background: $white;
+      z-index: 10;
+      position: relative;
+    }
+    &__hamburger {
+      display: block;
+      float: right;
+    }
+
+    &__nav {
+      margin: 2rem;
+      position: absolute;
+      display: none;
+      z-index: 0;
+      background: $white;
+      text-align: center;
+      background: $white;
+      box-shadow: 0 0 200px $dark-blue;
+      width: 85%;
+      top: 4rem;
+      border-radius: 5px;
+      li {
+        display: block;
+        margin: 0;
+      }
+
+      li a {
+        color: $dark-blue;
+        padding: 1.5rem 0;
+        display: block;
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .row {
+      display: block;
+      flex-direction: column;
+    }
+
+    &__signup {
+      display: none;
+    }
+  }
+}
