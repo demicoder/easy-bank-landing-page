@@ -31,3 +31,15 @@ $font-weight-normal: 400;
     width: 100%;
   }
 }
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}

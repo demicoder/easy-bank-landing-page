@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -19,8 +20,17 @@
             alt="EasyBank"
             class="main-header__logo--img"
           />
-          <div class="header__hamburger">
-            <img src="images/icons/icon-hamburger.svg" alt="Menu" />
+          <div class="header__mobile-menu">
+            <img
+              src="images/icons/icon-hamburger.svg"
+              class="open-menu show"
+              alt="Open Menu"
+            />
+            <img
+              src="images/icons/icon-close.svg"
+              alt="Close Menu"
+              class="close-menu hide"
+            />
           </div>
         </div>
 
@@ -50,7 +60,7 @@
               <p>
                 Take your financial life online. Your Easybank account will be a
                 one-stop-shop for spending, saving, budgeting, investing, and
-                muc more.
+                much more.
               </p>
 
               <a href="#" class="btn-primary">Request Invite</a>
@@ -155,11 +165,13 @@
       <div class="posts__grid">
         <div class="post">
           <div class="post__header">
-            <img
-              class="post__header--img"
-              src="images/image-currency.jpg"
-              alt="Recieve money in any currency with no fees"
-            />
+            <a href="#">
+              <img
+                class="post__header--img"
+                src="images/image-currency.jpg"
+                alt="Recieve money in any currency with no fees"
+              />
+            </a>
           </div>
 
           <div class="post__content">
@@ -178,11 +190,13 @@
         <!-- Post 2 -->
         <div class="post">
           <div class="post__header">
-            <img
-              class="post__header--img"
-              src="images/image-restaurant.jpg"
-              alt="Treat yourself without worrying about money"
-            />
+            <a href="#">
+              <img
+                class="post__header--img"
+                src="images/image-restaurant.jpg"
+                alt="Treat yourself without worrying about money"
+              />
+            </a>
           </div>
           <div class="post__content">
             <p class="post__author">By <a href="#">Wilson Hutton</a></p>
@@ -200,11 +214,13 @@
         <!-- Post 3 -->
         <div class="post">
           <div class="post__header">
-            <img
-              class="post__header--img"
-              src="images/image-plane.jpg"
-              alt="Take your EasyBank card wherever you go"
-            />
+            <a href="#">
+              <img
+                class="post__header--img"
+                src="images/image-plane.jpg"
+                alt="Take your EasyBank card wherever you go"
+              />
+            </a>
           </div>
 
           <div class="post__content">
@@ -223,11 +239,13 @@
         <!-- Post 4 -->
         <div class="post">
           <div class="post__header">
-            <img
-              class="post__header--img"
-              src="images/image-confetti.jpg"
-              alt="Our invite-only Beta accounts are now live!"
-            />
+            <a href="#">
+              <img
+                class="post__header--img"
+                src="images/image-confetti.jpg"
+                alt="Our invite-only Beta accounts are now live!"
+              />
+            </a>
           </div>
 
           <div class="post__content">
