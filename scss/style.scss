@@ -293,6 +293,24 @@ body {
 
 /* Responsive layout */
 @media (max-width: 375px) {
+  /* Utitlities start here */
+  .section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    text-align: center;
+    &__title {
+      line-height: 1.5;
+      font: {
+        size: 200%;
+        weight: $font-weight-normal;
+      }
+    }
+
+    &__description {
+      line-height: 2;
+    }
+  }
+
   .header {
     position: relative;
     background: transparent;

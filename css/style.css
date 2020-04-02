@@ -369,6 +369,20 @@ body {
 /* Main Footer end */
 /* Responsive layout */
 @media (max-width: 375px) {
+  /* Utitlities start here */
+  .section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  .section__title {
+    line-height: 1.5;
+    font-size: 200%;
+    font-weight: 400;
+  }
+  .section__description {
+    line-height: 2;
+  }
   .header {
     position: relative;
     background: transparent;
