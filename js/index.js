@@ -1,6 +1,7 @@
 // DOM elements
 const elements = {
   hamburgerMenu: document.querySelector('.header__mobile-menu'),
+  mainHeader: document.querySelector('.header'),
   nav: document.querySelector('.header__nav')
 };
 

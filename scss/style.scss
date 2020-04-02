@@ -60,6 +60,13 @@ body {
   z-index: 10;
   background: $white;
 
+  &__slide-down {
+    position: fixed;
+    bottom: 0;
+    animation: slideDownMenu 0s;
+    width: 100%;
+  }
+
   &__mobile-menu {
     display: none;
   }
@@ -218,12 +225,9 @@ body {
   }
 
   &__header {
-    background: #999;
-    background-size: cover;
     position: relative;
     height: 210px;
     overflow: hidden;
-    max-width: 500px;
     &--img {
       position: absolute;
       height: 100%;
@@ -269,6 +273,12 @@ body {
   &__social-icons {
     svg {
       margin-right: 0.5rem;
+      &:hover {
+        path {
+          animation: slideUp 0.2s;
+          fill: $lime-green !important;
+        }
+      }
     }
   }
   &__links {
@@ -375,7 +385,7 @@ body {
         transition: 0.4s ease-in;
         animation: slideUp 0.5s;
         li a {
-          animation: slideUp 1s;
+          animation: slideUp 0.8s;
         }
       }
       li {
@@ -440,6 +450,9 @@ body {
       position: relative;
       padding: 0 2rem;
       text-align: center;
+      h1 {
+        font-size: 200%;
+      }
       &--vertical-center {
         position: relative;
         transform: translate(0);
